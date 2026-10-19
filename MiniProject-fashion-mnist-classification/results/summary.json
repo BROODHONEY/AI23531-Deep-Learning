@@ -1,0 +1,183 @@
+{
+  "best_model_by_validation": "resnet_noaug",
+  "models": {
+    "logreg": {
+      "n_seeds": 3,
+      "params": 7850,
+      "epochs": 20,
+      "test_accuracy_mean": 0.8406333333333333,
+      "test_accuracy_std": 0.0013203534880225814,
+      "test_macro_f1_mean": 0.8405276345932013,
+      "test_macro_f1_std": 0.0016729360171733574,
+      "val_macro_f1_mean": 0.8686250523364571,
+      "best_epoch_mean": 14.666666666666666,
+      "train_time_min_mean": 0.10744611957222219,
+      "infer_ms_per_image_mean": 0.000742684699999548,
+      "train_minus_val_acc_pts": -0.4896969696969696
+    },
+    "mlp": {
+      "n_seeds": 3,
+      "params": 535818,
+      "epochs": 20,
+      "test_accuracy_mean": 0.892,
+      "test_accuracy_std": 0.000458257569495582,
+      "test_macro_f1_mean": 0.8919455369560799,
+      "test_macro_f1_std": 0.0010821918882819989,
+      "val_macro_f1_mean": 0.9082257955696765,
+      "best_epoch_mean": 17.333333333333332,
+      "train_time_min_mean": 1.1128997144111104,
+      "infer_ms_per_image_mean": 0.009853748066666413,
+      "train_minus_val_acc_pts": 0.7836363636363641
+    },
+    "cnn": {
+      "n_seeds": 3,
+      "params": 421642,
+      "epochs": 10,
+      "test_accuracy_mean": 0.9242333333333334,
+      "test_accuracy_std": 0.0012096831541082626,
+      "test_macro_f1_mean": 0.9240601413875037,
+      "test_macro_f1_std": 0.0011689199759041683,
+      "val_macro_f1_mean": 0.9361645150286555,
+      "best_epoch_mean": 9.666666666666666,
+      "train_time_min_mean": 7.947864506138887,
+      "infer_ms_per_image_mean": 0.6305985936333324,
+      "train_minus_val_acc_pts": 1.7660606060606046
+    },
+    "resnet": {
+      "n_seeds": 3,
+      "params": 77754,
+      "epochs": 12,
+      "test_accuracy_mean": 0.9179333333333334,
+      "test_accuracy_std": 0.0014011899704655937,
+      "test_macro_f1_mean": 0.9177949294973482,
+      "test_macro_f1_std": 0.0014974594481667902,
+      "val_macro_f1_mean": 0.9331939560370822,
+      "best_epoch_mean": 11.666666666666666,
+      "train_time_min_mean": 20.989391559994445,
+      "infer_ms_per_image_mean": 0.8400235016333378,
+      "train_minus_val_acc_pts": -1.2854545454545452
+    },
+    "vit": {
+      "n_seeds": 1,
+      "params": 139018,
+      "epochs": 15,
+      "test_accuracy_mean": 0.8749,
+      "test_accuracy_std": null,
+      "test_macro_f1_mean": 0.873771173291065,
+      "test_macro_f1_std": null,
+      "val_macro_f1_mean": 0.8844958702611881,
+      "best_epoch_mean": 15.0,
+      "train_time_min_mean": 42.69121319275,
+      "infer_ms_per_image_mean": 0.911266477199979,
+      "train_minus_val_acc_pts": -2.0000000000000018
+    },
+    "resnet_noaug": {
+      "n_seeds": 2,
+      "params": 77754,
+      "epochs": 12,
+      "test_accuracy_mean": 0.9269499999999999,
+      "test_accuracy_std": 0.00021213203435601938,
+      "test_macro_f1_mean": 0.9267324232092666,
+      "test_macro_f1_std": 0.00014194236685788827,
+      "val_macro_f1_mean": 0.9391191484817252,
+      "best_epoch_mean": 11.5,
+      "train_time_min_mean": 20.387190145366663,
+      "infer_ms_per_image_mean": 0.8530310913499761,
+      "train_minus_val_acc_pts": 1.714545454545452
+    }
+  },
+  "mcnemar": [
+    {
+      "a": "resnet_noaug",
+      "b": "cnn",
+      "only_a": 260,
+      "only_b": 248,
+      "p": 0.6255605653793291
+    },
+    {
+      "a": "logreg",
+      "b": "resnet_noaug",
+      "only_a": 188,
+      "only_b": 1038,
+      "p": 9.107024231379608e-143
+    },
+    {
+      "a": "mlp",
+      "b": "cnn",
+      "only_a": 195,
+      "only_b": 526,
+      "p": 5.731659754574313e-36
+    },
+    {
+      "a": "cnn",
+      "b": "resnet",
+      "only_a": 349,
+      "only_b": 258,
+      "p": 0.0002529765783925003
+    },
+    {
+      "a": "resnet",
+      "b": "vit",
+      "only_a": 634,
+      "only_b": 218,
+      "p": 8.462445813352135e-48
+    },
+    {
+      "a": "resnet_noaug",
+      "b": "resnet",
+      "only_a": 300,
+      "only_b": 197,
+      "p": 4.41433336591727e-06
+    }
+  ],
+  "top_confusions": [
+    {
+      "true": "Shirt",
+      "pred": "T-shirt/top",
+      "count": 185,
+      "pct_of_true": 9.25
+    },
+    {
+      "true": "T-shirt/top",
+      "pred": "Shirt",
+      "count": 153,
+      "pct_of_true": 7.6499999999999995
+    },
+    {
+      "true": "Shirt",
+      "pred": "Coat",
+      "count": 118,
+      "pct_of_true": 5.8999999999999995
+    },
+    {
+      "true": "Coat",
+      "pred": "Shirt",
+      "count": 99,
+      "pct_of_true": 4.95
+    },
+    {
+      "true": "Shirt",
+      "pred": "Pullover",
+      "count": 95,
+      "pct_of_true": 4.75
+    },
+    {
+      "true": "Coat",
+      "pred": "Pullover",
+      "count": 80,
+      "pct_of_true": 4.0
+    }
+  ],
+  "per_class_f1_best": {
+    "T-shirt/top": 0.8804027323835615,
+    "Trouser": 0.9881738668151843,
+    "Pullover": 0.8965051951443164,
+    "Dress": 0.930011855920541,
+    "Coat": 0.8900023103851813,
+    "Sandal": 0.9834352094414014,
+    "Shirt": 0.7832698808966558,
+    "Sneaker": 0.9661322079924821,
+    "Bag": 0.9813574762624793,
+    "Ankle boot": 0.9680334968508642
+  }
+}

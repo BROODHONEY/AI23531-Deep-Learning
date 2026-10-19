@@ -1,0 +1,19 @@
+train (55000, 1, 28, 28)  val (5000, 1, 28, 28)  test (10000, 1, 28, 28)  mean 0.2862  std 0.3531
+[run ] vit_seed0  config=TrainConfig(epochs=15, lr=0.002, weight_decay=0.05, batch_size=128, scheduler='onecycle', label_smoothing=0.1, augment=True)
+  epoch  1/15  train_loss 1.6326  train_acc 0.4582  val_loss 0.9280  val_acc 0.6736  val_f1 0.6651  [165s]
+  epoch  2/15  train_loss 1.1381  train_acc 0.6919  val_loss 0.7165  val_acc 0.7480  val_f1 0.7400  [344s]
+  epoch  3/15  train_loss 1.0502  train_acc 0.7337  val_loss 0.6336  val_acc 0.7838  val_f1 0.7775  [516s]
+  epoch  4/15  train_loss 0.9988  train_acc 0.7608  val_loss 0.6109  val_acc 0.7904  val_f1 0.7774  [680s]
+  epoch  5/15  train_loss 0.9623  train_acc 0.7797  val_loss 0.5856  val_acc 0.8038  val_f1 0.8013  [843s]
+  epoch  6/15  train_loss 0.9344  train_acc 0.7931  val_loss 0.5055  val_acc 0.8330  val_f1 0.8261  [1008s]
+  epoch  7/15  train_loss 0.9130  train_acc 0.8039  val_loss 0.5330  val_acc 0.8194  val_f1 0.8145  [1171s]
+  epoch  8/15  train_loss 0.8873  train_acc 0.8181  val_loss 0.4897  val_acc 0.8414  val_f1 0.8395  [1334s]
+  epoch  9/15  train_loss 0.8721  train_acc 0.8227  val_loss 0.4666  val_acc 0.8486  val_f1 0.8469  [1503s]
+  epoch 10/15  train_loss 0.8481  train_acc 0.8365  val_loss 0.4180  val_acc 0.8712  val_f1 0.8685  [1677s]
+  epoch 11/15  train_loss 0.8362  train_acc 0.8411  val_loss 0.4306  val_acc 0.8610  val_f1 0.8586  [1850s]
+  epoch 12/15  train_loss 0.8181  train_acc 0.8496  val_loss 0.3895  val_acc 0.8814  val_f1 0.8796  [2023s]
+  epoch 13/15  train_loss 0.8024  train_acc 0.8577  val_loss 0.3840  val_acc 0.8822  val_f1 0.8811  [2201s]
+  epoch 14/15  train_loss 0.7949  train_acc 0.8615  val_loss 0.3789  val_acc 0.8816  val_f1 0.8806  [2381s]
+  epoch 15/15  train_loss 0.7891  train_acc 0.8656  val_loss 0.3758  val_acc 0.8856  val_f1 0.8845  [2561s]
+[done] vit_seed0  test_acc 0.8749  test_macro_f1 0.8738  best_epoch 15  params 139,018  2572s
+[run ] vit_seed1  config=TrainConfig(epochs=15, lr=0.002, weight_decay=0.05, batch_size=128, scheduler='onecycle', label_smoothing=0.1, augment=True)

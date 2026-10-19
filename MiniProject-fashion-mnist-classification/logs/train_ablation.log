@@ -1,0 +1,15 @@
+train (55000, 1, 28, 28)  val (5000, 1, 28, 28)  test (10000, 1, 28, 28)  mean 0.2862  std 0.3531
+[run ] resnet_noaug_seed0  config=TrainConfig(epochs=12, lr=0.003, weight_decay=0.0005, batch_size=128, scheduler='onecycle', label_smoothing=0.1, augment=False)
+  epoch  1/12  train_loss 1.3238  train_acc 0.6613  val_loss 0.5758  val_acc 0.8302  val_f1 0.8257  [108s]
+  epoch  2/12  train_loss 0.8721  train_acc 0.8500  val_loss 0.4437  val_acc 0.8788  val_f1 0.8777  [215s]
+  epoch  3/12  train_loss 0.8081  train_acc 0.8775  val_loss 0.3652  val_acc 0.8968  val_f1 0.8933  [323s]
+  epoch  4/12  train_loss 0.7636  train_acc 0.8991  val_loss 0.3411  val_acc 0.9030  val_f1 0.9024  [431s]
+  epoch  5/12  train_loss 0.7418  train_acc 0.9093  val_loss 0.3580  val_acc 0.9024  val_f1 0.9009  [535s]
+  epoch  6/12  train_loss 0.7220  train_acc 0.9186  val_loss 0.3174  val_acc 0.9138  val_f1 0.9118  [639s]
+  epoch  7/12  train_loss 0.7038  train_acc 0.9259  val_loss 0.3035  val_acc 0.9286  val_f1 0.9282  [741s]
+  epoch  8/12  train_loss 0.6910  train_acc 0.9329  val_loss 0.2744  val_acc 0.9290  val_f1 0.9284  [842s]
+  epoch  9/12  train_loss 0.6743  train_acc 0.9408  val_loss 0.2607  val_acc 0.9338  val_f1 0.9336  [950s]
+  epoch 10/12  train_loss 0.6595  train_acc 0.9489  val_loss 0.2575  val_acc 0.9374  val_f1 0.9377  [1054s]
+  epoch 11/12  train_loss 0.6488  train_acc 0.9545  val_loss 0.2523  val_acc 0.9396  val_f1 0.9394  [1161s]
+  epoch 12/12  train_loss 0.6420  train_acc 0.9576  val_loss 0.2508  val_acc 0.9402  val_f1 0.9401  [1265s]
+[done] resnet_noaug_seed0  test_acc 0.9268  test_macro_f1 0.9266  best_epoch 12  params 77,754  1275s
